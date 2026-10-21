@@ -15,20 +15,20 @@ export default function Layout() {
       <header className="header">
         <div className="container header-content">
           <Link to="/" className="logo">
-            MiniBlog
+            Mực &amp; Gió
           </Link>
 
           <nav className="nav">
-            <Link to="/">Trang chủ</Link>
+            <Link to="/">Bảng tin</Link>
 
             {isAuthenticated && <Link to="/create">Viết bài</Link>}
 
             {isAuthenticated ? (
               <button onClick={handleLogout} className="link-button">
-                Đăng xuất
+                Rời phòng viết
               </button>
             ) : (
-              <Link to="/login">Đăng nhập</Link>
+              <Link to="/login">Mở khóa góc viết</Link>
             )}
           </nav>
         </div>
@@ -39,7 +39,7 @@ export default function Layout() {
       </main>
 
       <footer className="footer">
-        <p>MiniBlog - React + TypeScript</p>
+        <p>Mực &amp; Gió · một góc nhỏ cho những điều đáng nhớ</p>
       </footer>
     </>
   );

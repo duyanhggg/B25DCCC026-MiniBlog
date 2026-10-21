@@ -4,9 +4,10 @@
 
 body {
   margin: 0;
-  color: #1f2937;
-  background: #f3f4f6;
-  font-family: Arial, Helvetica, sans-serif;
+  color: #24302f;
+  background: #f5f1e8;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.5;
 }
 
 a {
@@ -21,16 +22,16 @@ textarea {
 }
 
 button {
-  padding: 10px 16px;
-  color: white;
+  padding: 11px 18px;
+  color: #f8f4ea;
   border: none;
-  border-radius: 6px;
-  background: #2563eb;
+  border-radius: 2px;
+  background: #c45b38;
   cursor: pointer;
 }
 
 button:hover {
-  background: #1d4ed8;
+  background: #a9462a;
 }
 
 .container {
@@ -39,9 +40,10 @@ button:hover {
 }
 
 .header {
-  padding: 18px 0;
-  color: white;
-  background: #111827;
+  padding: 22px 0;
+  color: #f8f4ea;
+  background: #24302f;
+  border-bottom: 5px solid #d9a441;
 }
 
 .header-content {
@@ -52,8 +54,10 @@ button:hover {
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
+  color: #f4c66b;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0;
 }
 
 .nav {
@@ -64,7 +68,7 @@ button:hover {
 
 .nav a:hover,
 .link-button:hover {
-  color: #93c5fd;
+  color: #f4c66b;
 }
 
 .link-button {
@@ -90,11 +94,34 @@ main.container {
   align-items: end;
   justify-content: space-between;
   gap: 20px;
-  margin-bottom: 28px;
+  margin-bottom: 36px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #d9d0bd;
+}
+
+.page-heading h1,
+.form-page h1,
+.not-found h2 {
+  max-width: 680px;
+  margin: 0 0 10px;
+  color: #24302f;
+  font-size: clamp(2.1rem, 5vw, 4.5rem);
+  font-weight: 400;
+  line-height: 0.98;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #c45b38;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
 }
 
 .page-heading h1 {
-  margin: 0 0 8px;
+  margin-bottom: 12px;
 }
 
 .page-heading p {
@@ -103,29 +130,32 @@ main.container {
 }
 
 .search-input {
-  width: 280px;
+  width: 250px;
   padding: 11px 14px;
-  border: 1px solid #d1d5db;
-  border-radius: 6px;
+  border: 1px solid #bcb19e;
+  border-radius: 0;
+  background: transparent;
 }
 
 .post-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: #bcb19e;
+  border: 1px solid #bcb19e;
 }
 
 .post-card {
   position: relative;
-  padding: 22px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+  min-height: 250px;
+  padding: 26px;
+  background: #f5f1e8;
 }
 
 .post-card h2 {
   margin-top: 0;
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 400;
   text-transform: capitalize;
 }
 
@@ -136,7 +166,7 @@ main.container {
 
 .read-more,
 .back-link {
-  color: #2563eb;
+  color: #c45b38;
   font-weight: bold;
 }
 
@@ -144,14 +174,14 @@ main.container {
   display: inline-block;
   margin-bottom: 10px;
   padding: 4px 8px;
-  color: #166534;
+  color: #24302f;
   font-size: 12px;
   border-radius: 999px;
-  background: #dcfce7;
+  background: #f4c66b;
 }
 
 .loading {
-  color: #2563eb;
+  color: #c45b38;
   font-weight: bold;
 }
 
@@ -165,14 +195,17 @@ main.container {
   margin: 0 auto;
 }
 
+.form-page h1 {
+  margin-bottom: 28px;
+}
+
 .form {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 28px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+  background: #fffdf7;
+  border-top: 4px solid #d9a441;
 }
 
 .form label {
@@ -184,14 +217,15 @@ main.container {
 .form textarea {
   width: 100%;
   padding: 11px 13px;
-  border: 1px solid #d1d5db;
-  border-radius: 6px;
+  border: 1px solid #bcb19e;
+  border-radius: 0;
+  background: transparent;
   outline: none;
 }
 
 .form input:focus,
 .form textarea:focus {
-  border-color: #2563eb;
+  border-color: #c45b38;
 }
 
 .form textarea {
@@ -226,13 +260,15 @@ main.container {
 
 .post-detail {
   padding: 32px;
-  background: white;
-  border-radius: 10px;
+  background: #fffdf7;
+  border-top: 4px solid #d9a441;
 }
 
 .post-detail h1 {
   margin-top: 0;
   text-transform: capitalize;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 400;
 }
 
 .post-meta {
@@ -251,9 +287,9 @@ main.container {
 .comment {
   margin-bottom: 15px;
   padding: 18px;
-  border-left: 4px solid #2563eb;
-  border-radius: 6px;
-  background: white;
+  border-left: 4px solid #d9a441;
+  border-radius: 0;
+  background: #fffdf7;
 }
 
 .comment h3 {
@@ -277,7 +313,7 @@ main.container {
 
 .not-found h1 {
   margin: 0;
-  color: #2563eb;
+  color: #c45b38;
   font-size: 100px;
 }
 
@@ -285,9 +321,9 @@ main.container {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 16px;
-  color: white;
-  border-radius: 6px;
-  background: #2563eb;
+  color: #f8f4ea;
+  border-radius: 2px;
+  background: #c45b38;
 }
 
 @media (max-width: 768px) {
@@ -307,5 +343,11 @@ main.container {
 
   .post-grid {
     grid-template-columns: 1fr;
+  }
+
+  .page-heading h1,
+  .form-page h1,
+  .not-found h2 {
+    font-size: 2.7rem;
   }
 }

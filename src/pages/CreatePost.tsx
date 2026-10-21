@@ -62,25 +62,26 @@ export default function CreatePost() {
 
   return (
     <section className="form-page">
-      <h1>Viết bài mới</h1>
+      <p className="eyebrow">Góc của bạn</p>
+      <h1>Để ý nghĩ có một chỗ ngồi.</h1>
 
       <form className="form" onSubmit={handleSubmit}>
-        <label htmlFor="title">Tiêu đề</label>
+        <label htmlFor="title">Tên mẩu chuyện</label>
 
         <input
           id="title"
           type="text"
-          placeholder="Nhập tiêu đề bài viết"
+          placeholder="Ví dụ: Một buổi chiều không vội"
           value={title}
           onChange={(event) => setTitle(event.target.value)}
         />
 
-        <label htmlFor="body">Nội dung</label>
+        <label htmlFor="body">Bạn muốn kể gì?</label>
 
         <textarea
           id="body"
           rows={10}
-          placeholder="Nhập nội dung bài viết"
+          placeholder="Viết như đang kể cho một người bạn nghe..."
           value={body}
           onChange={(event) => setBody(event.target.value)}
         />
@@ -93,7 +94,7 @@ export default function CreatePost() {
           </div>
         )}
 
-        <button type="submit">Đăng bài</button>
+        <button type="submit">Cất vào sổ</button>
       </form>
     </section>
   );

@@ -4,11 +4,11 @@ export default function NotFound() {
   return (
     <section className="not-found">
       <h1>404</h1>
-      <h2>Không tìm thấy trang</h2>
-      <p>Đường dẫn bạn truy cập không tồn tại.</p>
+      <h2>Trang này đi lạc mất rồi.</h2>
+      <p>Có lẽ nó đang nằm trong một cuốn sổ khác.</p>
 
       <Link to="/" className="button-link">
-        Về trang chủ
+        Về bảng tin
       </Link>
     </section>
   );

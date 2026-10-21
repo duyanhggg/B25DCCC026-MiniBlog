@@ -59,14 +59,15 @@ export default function Home() {
     <section>
       <div className="page-heading">
         <div>
-          <h1>Danh sách bài viết</h1>
-          <p>Khám phá các bài viết mới nhất</p>
+          <p className="eyebrow">Sổ tay mở</p>
+          <h1>Những mẩu nghĩ chưa kịp gọi tên.</h1>
+          <p>Đọc chậm một chút. Viết thật một chút.</p>
         </div>
 
         <input
           type="search"
           className="search-input"
-          placeholder="Tìm theo tiêu đề..."
+          placeholder="Tìm một tiêu đề..."
           value={keyword}
           onChange={(event) => setKeyword(event.target.value)}
         />
@@ -92,7 +93,7 @@ export default function Home() {
             <p>{post.body.slice(0, 150)}...</p>
 
             <Link to={`/posts/${post.id}`} className="read-more">
-              Đọc tiếp →
+              Mở trang →
             </Link>
           </article>
         ))}

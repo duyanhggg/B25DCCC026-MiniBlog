@@ -42,10 +42,11 @@ export default function Login() {
 
   return (
     <section className="form-page">
-      <h1>Đăng nhập</h1>
+      <p className="eyebrow">Cánh cửa nhỏ</p>
+      <h1>Trở lại bàn viết.</h1>
 
       <form className="form" onSubmit={handleSubmit}>
-        <label htmlFor="username">Tài khoản</label>
+        <label htmlFor="username">Tên người viết</label>
 
         <input
           id="username"
@@ -55,7 +56,7 @@ export default function Login() {
           onChange={(event) => setUsername(event.target.value)}
         />
 
-        <label htmlFor="password">Mật khẩu</label>
+        <label htmlFor="password">Mật khẩu phòng viết</label>
 
         <input
           id="password"
@@ -67,7 +68,7 @@ export default function Login() {
 
         {error && <p className="error">{error}</p>}
 
-        <button type="submit">Đăng nhập</button>
+        <button type="submit">Bước vào</button>
       </form>
 
       <p className="login-hint">
